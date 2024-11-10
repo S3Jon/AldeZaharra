@@ -47,3 +47,79 @@ footer {
 footer p {
     margin: 0;
 }
+#logo-y-nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+#logo-y-nombre img {
+    margin-bottom: 1rem; 
+}
+#introduccion {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-paragraphs {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.intro-image {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#origen-contextualizacion {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.context-section {
+    margin-bottom: 1.5rem;
+}
+
+.context-section h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.context-section p , ul {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#objetivo-general, #objetivos-especificos {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.objective-content p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.specific-objectives {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    line-height: 1.6;
+}
+
+.specific-objectives li {
+    margin-bottom: 0.75rem;
+}
