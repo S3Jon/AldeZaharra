@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2 - Bilboko Aztarnak</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../media/logo1.png" alt="Logo 1" class="logo">
+            <img src="../media/logo2.png" alt="Logo 2" class="logo">
+            <img src="../media/logo3.png" alt="Logo 3" class="logo">
+        </div>
+        <h1>BILBOKO AZTARNAK</h1>
+        <nav>
+            <ul>
+                <li><a href="../html/entrega1.html">FASE 1</a></li>
+                <li><a href="../html/entrega2.html">FASE 2</a></li>
+                <li><a href="../html/entrega3.html">FASE 3</a></li>
+                <li><a href="../html/entrega4.html">FASE 4</a></li>
+                <li><a href="../html/entrefinal.html">FASE FINAL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Análisis de Riesgos -->
+        <section id="riesgos">
+            <h2>Análisis de Riesgos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Riesgo Potencial</th>
+                        <th>Causa Probable</th>
+                        <th>Probabilidad</th>
+                        <th>Acción Preventiva</th>
+                        <th>Acción Correctiva</th>
+                        <th>Medios de Aviso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Errores técnicos en la app</td>
+                        <td>Código mal probado o falta de experiencia</td>
+                        <td>Media</td>
+                        <td>Realizar pruebas frecuentes (unitarias y de usuario)</td>
+                        <td>Corregir errores de manera iterativa y documentarlos</td>
+                        <td>Integrar herramientas como Logcat y crash reports</td>
+                    </tr>
+                    <tr>
+                        <td>Incompatibilidad de sistemas</td>
+                        <td>Ordenadores del centro con configuraciones diferentes</td>
+                        <td>Media</td>
+                        <td>Configurar los entornos correctamente al inicio</td>
+                        <td>Reinstalar configuraciones faltantes</td>
+                        <td>Monitorear las instalaciones con listas de verificación</td>
+                    </tr>
+                    <tr>
+                        <td>Falta de comunicación con los alumnos de la universidad</td>
+                        <td>Retrasos en respuestas o información incompleta</td>
+                        <td>Alta</td>
+                        <td>Establecer reuniones regulares y fijar plazos claros</td>
+                        <td>Buscar fuentes alternativas de información o aclaraciones rápidas</td>
+                        <td>Confirmar las entregas con mensajes o videollamadas</td>
+                    </tr>
+                    <tr>
+                        <td>Retrasos en la entrega del proyecto</td>
+                        <td>Falta de coordinación dentro del grupo</td>
+                        <td>Alta</td>
+                        <td>Asignar tareas claras y definir fechas límite en un cronograma</td>
+                        <td>Reorganizar tareas o priorizar entregables urgentes</td>
+                        <td>Usar un sistema de gestión como Trello o Google Docs</td>
+                    </tr>
+                    <tr>
+                        <td>Falta de recursos compartidos</td>
+                        <td>Desincronización del código o pérdida de archivos</td>
+                        <td>Media</td>
+                        <td>Usar un repositorio en GitHub para control de versiones</td>
+                        <td>Restaurar archivos desde el historial de Git</td>
+                        <td>Alertas de cambios y sincronización en GitHub</td>
+                    </tr>
+                    <tr>
+                        <td>Problemas de diseño de los juegos</td>
+                        <td>Requisitos mal definidos o inconsistentes</td>
+                        <td>Media</td>
+                        <td>Revisar en detalle la documentación antes de comenzar</td>
+                        <td>Ajustar el diseño con retroalimentación rápida</td>
+                        <td>Contacto directo con los responsables</td>
+                    </tr>
+                    <tr>
+                        <td>Interrupciones en el acceso a los equipos del centro</td>
+                        <td>Fallas técnicas o restricciones de uso</td>
+                        <td>Baja</td>
+                        <td>Planificar el trabajo fuera del horario crítico</td>
+                        <td>Usar equipos personales o aulas alternativas</td>
+                        <td>Comunicación con los profesores y soporte técnico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de Recursos Materiales -->
+        <section id="recursos-materiales">
+            <h2>Recursos Materiales</h2>
+            <ul>
+                <li>Portátil Hacer Aspire 3 x4</li>
+                <li>Ratón NGS Flame óptico con cable x4</li>
+                <li>Switch TP-Link TL-SG108E Unmanaged PRO x1</li>
+                <li>Cable de Red Ethernet con Conectores RJ45 x4</li>
+                <li>Mesa de madera para trabajo x2</li>
+                <li>Sillas para trabajo x4</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Procesadores de Texto -->
+        <section id="procesadores-de-texto">
+            <h2>Procesadores de Texto</h2>
+            <ul>
+                <li>Google Docs Editors:
+                    <ul class="sub-list">
+                        <li>Documentos</li>
+                        <li>Hojas de cálculo</li>
+                        <li>Presentaciones</li>
+                    </ul>
+                </li>
+                <li>Android Studio text editor</li>
+                <li>Visual Studio text editor</li>
+                <li>Windows Notepad</li>
+                <li>PDF</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Herramientas de Desarrollo -->
+        <section id="Herramientas-desarrollo">
+            <h2>Herramientas de Desarrollo</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/vscode.png" alt="Visual Studio Code">
+                    <p>Visual Studio Code</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/kotlinLogo.png" alt="Kotlin">
+                    <p>Kotlin</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/android.png" alt="Android Studio">
+                    <p>Android Studio</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/jetpack.png" alt="Jetpack Compose">
+                    <p>Jetpack Compose</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/gitkraken.png" alt="GitKraken">
+                    <p>GitKraken</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/GHdesktop.png" alt="GitHub Desktop">
+                    <p>GitHub Desktop</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/githubLogo.png" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/googleLogo.png" alt="Google">
+                    <p>Google</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/googleAPI.png" alt="Google APIs">
+                    <p>Google APIs</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/trelloLogo.png" alt="Trello">
+                    <p>Trello</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/ChatGPT-Logo.png" alt="Asistentes IA">
+                    <p>Asistentes IA</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../media/herramientas_desarrollo/Windows11.png" alt="Windows 11">
+                    <p>Windows 11</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bilboko Aztarnak - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

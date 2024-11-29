@@ -7,41 +7,116 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    align-items: center; /* Centra los elementos verticalmente */
     background-color: red;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    gap: 15px; /* Espacio entre los elementos */
 }
 
-header nav ul {
-    list-style: none;
+.logo-container {
+    display: flex;
+    gap: 15px; /* Espacio entre los logos */
+}
+
+/* Estilo para los logos */
+.logo {
+    width: 100px;  /* Ajusta el tamaño del logo */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Estilo para el título */
+h1 {
+    margin: 0;
+    font-size: 36px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Pone el título en negrita */
+    white-space: nowrap; /* Evita que el texto se rompa */
+    color: rgb(69, 247, 69); /* Cambia el color del texto a algo brillante, como un amarillo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    letter-spacing: 2px; /* Añade espacio entre las letras para hacerlo más estilizado */
+    text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+}
+
+nav {
+    margin-left: auto; /* Esto empuja el nav hacia la derecha */
+}
+
+nav ul {
+    list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 1rem;
 }
 
-header nav a {
-    color: white;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(69, 247, 69);
 }
 
 section {
-    padding: 2rem;
-    background-color: white;
-    margin: 1rem auto;
-    max-width: 900px;
-    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: red;
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #eaf1f7;
+}
+
+ul {
+    list-style-type: square;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.sub-list {
+    list-style-type: circle;
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 10px;
     background-color: red;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
@@ -122,4 +197,115 @@ footer p {
 
 .specific-objectives li {
     margin-bottom: 0.75rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    padding: 8px 12px;
+    display: block;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#Herramientas-desarrollo {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Herramientas-desarrollo h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    max-width: 150px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.grid-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #eaeaea;
 }
