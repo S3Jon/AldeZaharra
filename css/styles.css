@@ -309,3 +309,124 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #eaeaea;
 }
+
+/*estilo de secion tareas*/
+
+.timeline {
+    display: grid; /* Cambiado para usar Grid */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 20px; /* Espacio entre columnas y filas */
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 3px solid red; /* Línea de cada evento */
+}
+
+.timeline-event::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.timeline-event h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.timeline-event .details {
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.timeline-event button {
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* estilo de grupo*/
+
+
+.team-section {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.team-section h3 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.team-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.team-info h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.team-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #34495e;
+}
+
+.team-info strong {
+    color: #16a085;
+    font-weight: bold;
+}
