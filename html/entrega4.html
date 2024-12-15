@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
         <title>FASE 3</title>
     </head>
     <body>
@@ -23,5 +24,110 @@
                 </ul>
             </nav>
         </header>
+
+
+
+        <main>
+            <section class="politica-evaluacion">
+                <h2>Políticas de Seguimiento y Evaluación</h2>
+            
+                <!-- Sección interactiva 1 -->
+                <div class="section">
+                    <div class="title" onclick="togglePanel(this)">
+                        <h3> Desarrollo de la Actividad en el Grupo</h3>
+                    </div>
+                    <div class="content">
+                        <p>A través de <strong>Trello</strong>, se ha gestionado la actividad del grupo de forma ordenada, utilizando un tablero llamado <em>"Erronka2_Talde2-2024-2025"</em> con las siguientes listas para organizar y evaluar el progreso:</p>
+                        <ul>
+                            <li><strong>Backlog:</strong> Ideas y tareas pendientes por realizar.</li>
+                            <li><strong>Planning/Design:</strong> Tareas en fase de planificación y diseño.</li>
+                            <li><strong>In Progress:</strong> Tareas actualmente en desarrollo.</li>
+                            <li><strong>Review:</strong> Tareas completadas pendientes de revisión.</li>
+                            <li><strong>Done:</strong> Tareas finalizadas.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Sección interactiva 2 -->
+                <div class="section">
+                    <div class="title" onclick="togglePanel(this)">
+                        <h3> Seguimiento de la Tarea en el Grupo</h3>
+                    </div>
+                    <div class="content">
+                        <p>El seguimiento se ha realizado de manera constante mediante las siguientes prácticas:</p>
+                        <ul>
+                            <li><strong>Asignación de tarjetas:</strong> Cada miembro del equipo se encargó de tareas específicas, como por ejemplo:
+                                <ul>
+                                    <li>Jimena Quiroz: "Investigar cómo hacer el juego de buscar similitudes".</li>
+                                    <li>Igotz Idigoras: "Añadir botón de ajustes con opciones de sonido, idioma y animación".</li>
+                                    <li>David Castillo: "Diseño de la vista del mapa".</li>
+                                    <li>Jon: "Desarrollar la navegación hacia el juego desde el mapa"</li>
+                                </ul>
+                            </li>
+                            <li>En caso , de no poder con la tarea , buscar ayuda y preguntar</li>
+                            <li><strong>Movimiento entre listas:</strong> Las tareas se movieron entre las listas de <em>Backlog → Planning → In Progress → Review → Done 🎉</em>.</li>
+                            <li><strong>Descripción y actualizaciones:</strong> Las tarjetas incluían información adicional, como descripciones de problemas y etiquetas.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Sección interactiva 3 -->
+                <div class="section">
+                    <div class="title" onclick="togglePanel(this)">
+                        <h3> Herramientas y Técnicas Utilizadas</h3>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li><strong>Reuniones periódicas:</strong> El equipo discutía el progreso y resolvía bloqueos, esto resulto facil porque estamos en clases.</li>
+                            <li>Gestionar los srpint para los profesores</li>
+                            <li>Tenemos grupo de whatsapp</li>
+                            <li><strong>Trello como herramienta principal:</strong> Facilitó la visualización del flujo de trabajo y asignación de tareas.</li>
+                            <li><strong>Etiquetas:</strong> Se utilizaron para identificar responsables y clasificar tareas según la urgencia.</li>
+                            <li><strong>Control visual del progreso:</strong> Gracias a Trello, cada miembro podía ver el estado de cada tarea en tiempo real.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Sección interactiva 4 -->
+                <div class="section">
+                    <div class="title" onclick="togglePanel(this)">
+                        <h3> Evaluación del Desarrollo</h3>
+                    </div>
+                    <div class="content">
+                        <h4>Éxitos:</h4>
+                        <ul>
+                            <li>"Crear las tablas de base de datos".</li>
+                            <li>"Diseño de la vista del mapa".</li>
+                            <li>Los problemas encontrados (como retrasos o falta de recursos) se resolvieron rápidamente.</li>
+                            <li>Unir todas las partes del proyecto</li>
+                        
+                            
+                        </ul>
+                        <h4>Aspectos a mejorar:</h4>
+                        <ul>
+                            <li>Mejor comunicación en tareas que pasaban a la lista <strong>Review</strong>.</li>
+                            <li>Gestión de tiempos en tareas que requerían investigación adicional.</li>
+                            <li>Buscar solucion a tareas que llevaron mas 45 horas</li>
+                            <li>Buscar las opiniones de los profesores a la hora de no solucionar problemas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <script>
+                function togglePanel(element) {
+    const content = element.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}
+
+            </script>
+            
+        </main>
+
+     
+
     </body>
 </html>
