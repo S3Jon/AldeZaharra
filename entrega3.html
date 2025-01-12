@@ -30,67 +30,85 @@
         <main>
             
             <section class="presupuesto">
-                <h2>Presupuesto del Proyecto</h2>
-                <button onclick="toggleIndirectCosts()" class="toggle-btn">Mostrar/Ocultar Gastos Indirectos</button>
-                <table id="budgetTable">
-                    <thead>
-                        <tr>
-                            <th>Categoría</th>
-                            <th>Detalle</th>
-                            <th>Coste (€)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr onclick="highlightRow(this)">
-                            <td>Mano de obra</td>
-                            <td>250 horas × 25 €/hora</td>
-                            <td>6.250</td>
-                        </tr>
-                        <tr onclick="highlightRow(this)">
-                            <td>Equipo</td>
-                            <td>4 ordenadores (15% del valor de 1.000 €)</td>
-                            <td>600</td>
-                        </tr>
-                        <tr onclick="highlightRow(this)">
-                            <td>Herramientas y software</td>
-                            <td>Software de diseño, hosting, librerías</td>
-                            <td>200</td>
-                        </tr>
-                        <tr class="indirect" onclick="highlightRow(this)">
-                            <td>Electricidad</td>
-                            <td>0,2 kWh × 0,25 €/kWh × 250 horas × 4 PCs</td>
-                            <td>50</td>
-                        </tr>
-                        <tr class="indirect" onclick="highlightRow(this)">
-                            <td>Internet</td>
-                            <td>50 €/mes × 2 meses</td>
-                            <td>100</td>
-                        </tr>
-                        <tr class="indirect" onclick="highlightRow(this)">
-                            <td>Alquiler de oficina</td>
-                            <td>400 €/mes × 2 meses</td>
-                            <td>800</td>
-                        </tr>
-                        <tr class="indirect" onclick="highlightRow(this)">
-                            <td>Limpieza/mantenimiento</td>
-                            <td>50 €/mes × 2 meses</td>
-                            <td>100</td>
-                        </tr>
-                        <tr class="indirect" onclick="highlightRow(this)">
-                            <td>Imprevistos</td>
-                            <td>10% de los costes directos (7.200 € × 0,10)</td>
-                            <td>720</td>
-                        </tr>
-                        <tr>
-                            <th colspan="2">Total del presupuesto</th>
-                            <th>8.277,75</th>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            
-            
-            
+				<h2>Presupuesto del Proyecto</h2>
+				<button onclick="toggleIndirectCosts()" class="toggle-btn">Mostrar/Ocultar Gastos Indirectos</button>
+				<table id="budgetTable">
+					<thead>
+						<tr>
+							<th>Categoría</th>
+							<th>Detalle</th>
+							<th>Coste (€)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Costes Directos -->
+						<tr>
+							<th colspan="3" class="section-header">Costes Directos</th>
+						</tr>
+						<tr onclick="highlightRow(this)">
+							<td>Equipo de desarrolladores</td>
+							<td>250 horas × 25 €/hora</td>
+							<td>6.250 €</td>
+						</tr>
+						<tr onclick="highlightRow(this)">
+							<td>Equipo</td>
+							<td>4 ordenadores (15% del valor de 1.000 € cada uno)</td>
+							<td>600 €</td>
+						</tr>
+						<tr onclick="highlightRow(this)">
+							<td>Herramientas y software</td>
+							<td>Software de diseño, hosting, librerías</td>
+							<td>200 €</td>
+						</tr>
+						<tr onclick="highlightRow(this)">
+							<td>Electricidad</td>
+							<td>0,2 kWh × 0,25 €/kWh × 250 horas × 4 PCs</td>
+							<td>50 €</td>
+						</tr>
+						<tr onclick="highlightRow(this)">
+							<td>Internet</td>
+							<td>50 €/mes × 2 meses</td>
+							<td>100 €</td>
+						</tr>
+						<tr onclick="highlightRow(this)">
+							<td>Auditoría QA</td>
+							<td>Auditoria externa para asegurar calidad de la aplicación</td>
+							<td>700 €</td>
+						</tr>
+			
+						<!-- Costes Indirectos -->
+						<tr>
+							<th colspan="3" class="section-header">Costes Indirectos</th>
+						</tr>
+						<tr class="indirect" onclick="highlightRow(this)">
+							<td>Alquiler de oficina</td>
+							<td>400 €/mes × 2 meses</td>
+							<td>800 €</td>
+						</tr>
+						<tr class="indirect" onclick="highlightRow(this)">
+							<td>Limpieza/mantenimiento</td>
+							<td>50 €/mes × 2 meses</td>
+							<td>100 €</td>
+						</tr>
+						<tr class="indirect" onclick="highlightRow(this)">
+							<td>Seguro de responsabilidad civil</td>
+							<td>200 €/año</td>
+							<td>200 €</td>
+						</tr>
+						<tr class="indirect" onclick="highlightRow(this)">
+							<td>Accesibilidad e idiomas</td>
+							<td>Implemetación de herramientas para mejor accesibilidad y traducción</td>
+							<td>200 €</td>
+						</tr>
+			
+						<!-- Total -->
+						<tr>
+							<th colspan="2">Total del presupuesto</th>
+							<th>9.200 €</th>
+						</tr>
+					</tbody>
+				</table>
+			</section>			
         </main>
 
         <script>
