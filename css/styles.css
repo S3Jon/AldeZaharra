@@ -2,7 +2,7 @@
     --color-primario: #3498db;
     --color-secundario: #2ecc71;
     --color-fondo: #f4f4f9;
-    --color-texto: black;
+    --color-texto: #333;
     --color-borde: #ddd;
     --espaciado: 1rem;
     --radio-borde: 8px;
@@ -38,12 +38,41 @@ header {
 /* Título del header */
 header h1 {
     padding-left: 2%;
-    font-size: 2rem; /* Tamaño grande y visible */
-    font-family: var(--fuente-secundaria); /* Fuente secundaria */
-    color: var(--color-texto); /* Color del texto */
-    margin: 0; /* Sin margen */
-    font-weight: 800; /* Muy negrita para destacar */
-    letter-spacing: 0.05em; /* Espaciado entre letras */
+    font-size: 3rem; /* Un tamaño grande para visibilidad */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y limpia */
+    color: var(--color-principal); /* Color del texto según tu paleta */
+    margin: 0;
+    font-weight: 700; /* Un peso moderado para la fuente */
+    letter-spacing: 0.03em; /* Espaciado sutil entre las letras */
+    text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+    position: relative; /* Para poder aplicar el efecto de subrayado */
+    display: inline-block; /* Alineación mejor con otros elementos */
+}
+
+/* Efecto de subrayado con línea */
+header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Colocar la línea justo debajo del texto */
+    left: 0;
+    width: 100%;
+    height: 3px; /* Grosor de la línea */
+    background-color: var(--color-secundario); /* Color de la línea */
+    transform: scaleX(0); /* La línea empieza invisible */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out; /* Efecto de transición suave */
+}
+
+/* Efecto al pasar el ratón */
+header h1:hover::after {
+    transform: scaleX(1); /* La línea se extiende de izquierda a derecha */
+    transform-origin: bottom left; /* El origen de la animación está a la izquierda */
+}
+
+/* Efecto al pasar el ratón sobre el texto */
+header h1:hover {
+    color: var(--color-secundario); /* Cambiar el color del texto al hacer hover */
+    letter-spacing: 0.1em; /* Aumentar el espaciado entre las letras */
 }
 
 /* Navegación o elementos adicionales en el header */
@@ -51,7 +80,7 @@ header nav {
     color: var(--color-texto);
     font-family: var(--fuente-secundaria);
     font-size: 1.2rem; /* Tamaño adecuado para acompañar al título */
-    display: flex;
+    display: block;
     gap: 2rem; /* Espaciado más amplio entre enlaces */
 }
 
