@@ -1,3 +1,22 @@
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2ecc71;
+    --color-fondo: #f4f4f9;
+    --color-texto: #333;
+    --color-borde: #ddd;
+    --espaciado: 1rem;
+    --radio-borde: 8px;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --fuente-principal: 'Roboto', sans-serif;
+    --fuente-secundaria: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,13 +26,49 @@ body {
 }
 
 header {
+    display: flex; /* Alineación horizontal */
+    align-items: center; /* Centrado vertical */
+    justify-content: space-between; /* Espacio entre elementos */
+    padding: 1rem 1.5rem; /* Espaciado más amplio para evitar que se pegue */
+    background-color: var(--color-primario); /* Fondo del header */
+    border-bottom: 2px solid var(--color-borde); /* Línea más visible */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Título del header */
+header h1 {
+    padding-left: 2%;
+    font-size: 2rem; /* Tamaño grande y visible */
+    font-family: var(--fuente-secundaria); /* Fuente secundaria */
+    color: var(--color-texto); /* Color del texto */
+    margin: 0; /* Sin margen */
+    font-weight: 800; /* Muy negrita para destacar */
+    letter-spacing: 0.05em; /* Espaciado entre letras */
+}
+
+/* Navegación o elementos adicionales en el header */
+header nav {
+    font-size: 1.2rem; /* Tamaño adecuado para acompañar al título */
     display: flex;
-    justify-content: flex-start; /* Alinea los elementos a la izquierda */
-    align-items: center; /* Centra los elementos verticalmente */
-    background-color: red;
-    color: #fff;
-    padding: 10px 20px;
-    gap: 15px; /* Espacio entre los elementos */
+    gap: 2rem; /* Espaciado más amplio entre enlaces */
+}
+
+/* Enlaces de la navegación */
+header nav a {
+    text-decoration: none; /* Sin subrayado */
+    color: var(--color-texto); /* Color de los enlaces */
+    font-weight: 600; /* Resaltados pero no exagerados */
+    transition: color 0.3s; /* Efecto suave al pasar el ratón */
+}
+
+header nav a:hover {
+    color: var(--color-primario); /* Cambia de color al pasar el ratón */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espaciado);
 }
 
 .logo-container {
@@ -29,15 +84,22 @@ header {
 }
 
 /* Estilo para el título */
+h1, h2, h3 {
+    color: var(--color-primario);
+    margin-bottom: var(--espaciado);
+    font-weight: bold;
+}
+
 h1 {
-    margin: 0;
-    font-size: 36px; /* Aumenta el tamaño de la fuente */
-    font-weight: bold; /* Pone el título en negrita */
-    white-space: nowrap; /* Evita que el texto se rompa */
-    color: rgb(69, 247, 69); /* Cambia el color del texto a algo brillante, como un amarillo */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
-    letter-spacing: 2px; /* Añade espacio entre las letras para hacerlo más estilizado */
-    text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 nav {
@@ -53,6 +115,52 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+}
+
+
+/* Botones */
+button, .btn {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Tarjetas */
+.card {
+    background: white;
+    padding: var(--espaciado);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra);
+    margin-bottom: var(--espaciado);
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
 }
 
 nav ul li a {
@@ -111,16 +219,41 @@ ul {
 .sub-list {
     list-style-type: circle;
 }
-
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: red;
+    background-color: var(--color-primario);
     color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: var(--sombra);
+    font-size: 0.9rem;
 }
 
 footer p {
     margin: 0;
+}
+
+footer a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 #logo-y-nombre {
     display: flex;
@@ -434,11 +567,15 @@ nav ul li a {
 
 
 /*fase 3*/
-
+/* Estilos generales */
 .presupuesto {
     margin: 20px auto;
     max-width: 80%;
     font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .presupuesto h2 {
@@ -446,12 +583,14 @@ nav ul li a {
     color: #007BFF;
     font-size: 2rem;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
+/* Botón de mostrar/ocultar */
 .toggle-btn {
     display: block;
     margin: 10px auto 20px auto;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1rem;
     color: white;
     background-color: #007BFF;
@@ -465,6 +604,7 @@ nav ul li a {
     background-color: #0056b3;
 }
 
+/* Tabla */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -472,20 +612,24 @@ table {
     background: #f9f9f9;
     border: 1px solid #ddd;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 thead th {
     background-color: #007BFF;
     color: white;
-    padding: 10px;
+    padding: 15px 20px;
     font-size: 1rem;
     text-align: left;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 tbody td {
-    padding: 10px;
+    padding: 12px 20px;
     border-bottom: 1px solid #ddd;
     font-size: 0.9rem;
+    color: #333;
 }
 
 tbody tr:nth-child(even) {
@@ -504,11 +648,29 @@ tbody tr.highlight {
 
 th, td {
     text-align: left;
+    font-weight: normal;
 }
 
+/* Ajustes responsive para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .presupuesto {
+        max-width: 100%;
+        padding: 15px;
+    }
 
+    table {
+        font-size: 0.85rem;
+    }
 
+    thead th, tbody td {
+        padding: 10px;
+    }
 
+    .toggle-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
 
 /*fase 4*/
 

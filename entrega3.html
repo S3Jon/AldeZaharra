@@ -13,7 +13,7 @@
                 <img src="media/logo2.png" alt="Logo 2" class="logo">
                 <img src="media/logo3.png" alt="Logo 3" class="logo">
             </div>
-            <h1>BilbokoAztarnak</h1>
+            <h1>BILBOKO AZTARNAK</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">FASE 1</a></li>
@@ -25,109 +25,125 @@
             </nav>
         </header>
 
-
-
         <main>
-            
             <section class="presupuesto">
-				<h2>Presupuesto del Proyecto</h2>
-				<button onclick="toggleIndirectCosts()" class="toggle-btn">Mostrar/Ocultar Gastos Indirectos</button>
-				<table id="budgetTable">
-					<thead>
-						<tr>
-							<th>Categoría</th>
-							<th>Detalle</th>
-							<th>Coste (€)</th>
-						</tr>
-					</thead>
-					<tbody>
-						<!-- Costes Directos -->
-						<tr>
-							<th colspan="3" class="section-header">Costes Directos</th>
-						</tr>
-						<tr onclick="highlightRow(this)">
-							<td>Equipo de desarrolladores</td>
-							<td>250 horas × 25 €/hora</td>
-							<td>6.250 €</td>
-						</tr>
-						<tr onclick="highlightRow(this)">
-							<td>Equipo</td>
-							<td>4 ordenadores (15% del valor de 1.000 € cada uno)</td>
-							<td>600 €</td>
-						</tr>
-						<tr onclick="highlightRow(this)">
-							<td>Herramientas y software</td>
-							<td>Software de diseño, hosting, librerías</td>
-							<td>200 €</td>
-						</tr>
-						<tr onclick="highlightRow(this)">
-							<td>Electricidad</td>
-							<td>0,2 kWh × 0,25 €/kWh × 250 horas × 4 PCs</td>
+                <h2>Presupuesto del Proyecto</h2>
+                <button onclick="toggleIndirectCosts()" class="toggle-btn">Mostrar/Ocultar Gastos Indirectos</button>
+                <table id="budgetTable">
+                    <thead>
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Detalle</th>
+                            <th>Coste (€)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Costes Directos -->
+                        <tr>
+                            <th colspan="3" class="section-header">Costes Directos</th>
+                        </tr>
+                        <tr onclick="highlightRow(this)">
+                            <td>Equipo de desarrolladores</td>
+                            <td>250 horas × 25 €/hora</td>
+                            <td>6.250 €</td>
+                        </tr>
+                        <tr onclick="highlightRow(this)">
+                            <td>Equipo</td>
+                            <td>4 ordenadores (15% del valor de 1.000 € cada uno)</td>
+                            <td>600 €</td>
+                        </tr>
+                        <tr onclick="highlightRow(this)">
+                            <td>Herramientas y software</td>
+                            <td>Software de diseño, hosting, librerías</td>
+                            <td>150 €</td>
+                        </tr>
+                        <tr onclick="highlightRow(this)">
+                            <td>API de Google</td>
+                            <td>Firebase, Mapa</td>
+                            <td>100 €</td>
+                        </tr>
+                        <tr onclick="highlightRow(this)">
+                            <td>Electricidad</td>
+                            <td>0,2 kWh × 0,25 €/kWh × 250 horas × 4 PCs</td>
+                            <td>50 €</td>
+                        </tr>
+                        <tr onclick="highlightRow(this)">
+                            <td>Internet</td>
+                            <td>25 €/mes × 2 meses</td>
+                            <td>50 €</td>
+                        </tr>
+                        <tr onclick="highlightRow(this)">
+                            <td>Auditoría QA</td>
+                            <td>Auditoria externa para asegurar calidad de la aplicación</td>
+                            <td>400 €</td>
+                        </tr>
+            
+                        <!-- Costes Indirectos -->
+                        <tr>
+                            <th colspan="3" class="section-header">Costes Indirectos</th>
+                        </tr>
+                        <tr class="indirect" onclick="highlightRow(this)">
+                            <td>Alquiler de oficina</td>
+                            <td>250 €/mes × 2 meses</td>
+                            <td>500 €</td>
+                        </tr>
+                        <tr class="indirect" onclick="highlightRow(this)">
+                            <td>Limpieza/mantenimiento</td>
+                            <td>25 €/mes × 2 meses</td>
+                            <td>50 €</td>
+                        </tr>
+                        <tr class="indirect" onclick="highlightRow(this)">
+                            <td>Seguro de responsabilidad civil</td>
+                            <td>200 €/año</td>
+                            <td>200 €</td>
+                        </tr>
+                        <tr class="indirect" onclick="highlightRow(this)">
+                            <td>Alojamiento web para la base de datos</td>
+                            <td>Costes de servidores para alojar el backend de la aplicación</td>
+                            <td>100 €</td>
+                        </tr>
+                        <tr class="indirect" onclick="highlightRow(this)">
+                            <td>Accesibilidad e idiomas</td>
+                            <td>Implementación de herramientas para mejor accesibilidad y traducción</td>
+                            <td>150 €</td>
+                        </tr>
+                        <tr class="indirect" onclick="highlightRow(this)">
+                            <td>Mantenimiento y actualizaciones de la app</td>
+                            <td>Costes de mantenimiento y actualizaciones tras el lanzamiento (6 meses)</td>
+                            <td>200 €</td>
+                        </tr>
+						<tr class="indirect" onclick="highlightRow(this)">
+							<td>Formación del personal</td>
+							<td>Capacitación en nuevas tecnologías y herramientas</td>
 							<td>50 €</td>
 						</tr>
-						<tr onclick="highlightRow(this)">
-							<td>Internet</td>
-							<td>50 €/mes × 2 meses</td>
-							<td>100 €</td>
-						</tr>
-						<tr onclick="highlightRow(this)">
-							<td>Auditoría QA</td>
-							<td>Auditoria externa para asegurar calidad de la aplicación</td>
-							<td>700 €</td>
-						</tr>
-			
-						<!-- Costes Indirectos -->
-						<tr>
-							<th colspan="3" class="section-header">Costes Indirectos</th>
-						</tr>
-						<tr class="indirect" onclick="highlightRow(this)">
-							<td>Alquiler de oficina</td>
-							<td>400 €/mes × 2 meses</td>
-							<td>800 €</td>
-						</tr>
-						<tr class="indirect" onclick="highlightRow(this)">
-							<td>Limpieza/mantenimiento</td>
-							<td>50 €/mes × 2 meses</td>
-							<td>100 €</td>
-						</tr>
-						<tr class="indirect" onclick="highlightRow(this)">
-							<td>Seguro de responsabilidad civil</td>
-							<td>200 €/año</td>
-							<td>200 €</td>
-						</tr>
-						<tr class="indirect" onclick="highlightRow(this)">
-							<td>Accesibilidad e idiomas</td>
-							<td>Implemetación de herramientas para mejor accesibilidad y traducción</td>
-							<td>200 €</td>
-						</tr>
-			
-						<!-- Total -->
-						<tr>
-							<th colspan="2">Total del presupuesto</th>
-							<th>9.200 €</th>
-						</tr>
-					</tbody>
-				</table>
-			</section>			
+                        <!-- Total -->
+                        <tr>
+                            <th colspan="2">Total del presupuesto</th>
+                            <th>8.650 €</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>			
         </main>
-		<footer>
-			<p>&copy; 2024 BilbokoAztarnak - Todos los derechos reservados.</p>
-		</footer>
+        
+        <footer>
+            <p>&copy; 2024 BilbokoAztarnak - Todos los derechos reservados.</p>
+        </footer>
+
         <script>
-     function toggleIndirectCosts() {
-    const indirectRows = document.querySelectorAll('.indirect');
-    indirectRows.forEach(row => {
-        row.style.display = row.style.display === 'none' ? '' : 'none';
-    });
-}
+            function toggleIndirectCosts() {
+                const indirectRows = document.querySelectorAll('.indirect');
+                indirectRows.forEach(row => {
+                    row.style.display = row.style.display === 'none' ? '' : 'none';
+                });
+            }
 
-function highlightRow(row) {
-    const rows = document.querySelectorAll('#budgetTable tbody tr');
-    rows.forEach(r => r.classList.remove('highlight')); // Quitar resaltado de otras filas
-    row.classList.add('highlight'); // Resaltar fila seleccionada
-}
-
-
+            function highlightRow(row) {
+                const rows = document.querySelectorAll('#budgetTable tbody tr');
+                rows.forEach(r => r.classList.remove('highlight')); // Quitar resaltado de otras filas
+                row.classList.add('highlight'); // Resaltar fila seleccionada
+            }
         </script>
     </body>
 </html>
